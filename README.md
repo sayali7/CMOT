@@ -20,5 +20,10 @@ The code has been test on Python versions 3.6 and above on Linux.
 git clone https://github.com/daifengwanglab/CMOT
 cd CMOT
 ```
+## Usage
+### Step A: Manifold alignment to align source cells with multimodal data
 
+### Step B: Optimal Transport to map source and target cells by shared modality
+
+### Step C: K-Nearest Neighbors to infer the additional modality of target cells
 
