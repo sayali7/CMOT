@@ -59,6 +59,8 @@ python3 cmot_evaluations.py --targetX_hat ./src/data/Pan-Cancer/PanCancerX_hat.c
 * targetX_hat: .csv file of size (s<sub>$\widehat{X}$</sub>, f<sub>$\widehat{X}$</sub>) held-out target modality $\widehat{X}$
 * predX_hat: .csv file of inferred target modality $\widehat{X}$ by CMOT
 
+s<sub>$\widehat{X}$</sub>: number of cells in $\widehat{X}$, f<sub>$\widehat{X}$</sub>: number of features in $\widehat{X}$
+
 Output:
 The above evaluations give cell-wise Pearson correlations for the inferred modality $\widehat{X}$ versus held out target modality $\widehat{X}$
 
