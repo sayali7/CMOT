@@ -25,7 +25,7 @@ cd CMOT/src
 ## Usage
 to train CMOT:
 ```r
-python3 run_cmot.py -sourceX modalityX.csv -sourceY modalityY.csv -labels labels.csv -targetY modalityYhat.csv -K 5 -d 10 -W W hc -2 -reg_e 1e-01 reg_cl 1e00 topFeat 50 k 10
+python3 run_cmot.py --sourceX PanCancerX.csv --sourceY PanCancerY.csv --targetY PanCancerY_hat.csv --K 5 --d 30 --W W.npy --hc 3 --reg_e 1e03 --reg_cl 1e00 --topFeat 150 --k 40
 ```
 The command line arguments are:
 * sourceX: .csv file of size (s<sub>X</sub>, f<sub>X</sub>) for source modality X
@@ -46,3 +46,8 @@ s<sub>X</sub>: number of cells in X, f<sub>X</sub>: number of features in X, s<s
  
 Output:
 The result is inferred modality $\widehat{X}$ of size (s<sub>$\widehat{X}$</sub>, f<sub>$\widehat{X}$</sub>); s<sub>$\widehat{X}$</sub>: number of cells in inferred modality $\widehat{X}$, f<sub>$\widehat{X}$</sub>: number of features in modality $\widehat{X}$, such that f<sub>X</sub> = f<sub>$\widehat{X}$</sub>
+
+To evaluate:
+```r
+python3 cmot_evaluations.py --targetX_hat PanCancerX_hat.csv --predX_hat ./results/Norm_ModalityXhat.csv
+```
