@@ -40,4 +40,4 @@ The command line arguments are:
 * k: integer to specify the K-nearest neighbors in Step C
 
 Output:
-The result is inferred modality $\widehat{X}$ of size (s<sub>$\widehat{X}$</sub>, f<sub>X</sub>); s<sub>$\widehat{X}$</sub>: number of cells in inferred modality widehat{X}, f<sub>widehat{X}</sub>: number of features in modality widehat{X}, such that f<sub>X</sub> = f<sub>widehat{X}</sub>
+The result is inferred modality $\widehat{X}$ of size (s<sub>$\widehat{X}$</sub>, f<sub>widehat{X}</sub>); s<sub>$\widehat{X}$</sub>: number of cells in inferred modality widehat{X}, f<sub>widehat{X}</sub>: number of features in modality widehat{X}, such that f<sub>X</sub> = f<sub>widehat{X}</sub>
