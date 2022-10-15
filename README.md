@@ -14,7 +14,7 @@ To address those challenges, we developed Cross-Modality Optimal Transport (CMOT
 * Pandas 1.3.5
 * Numpy 1.21.4
 * Scikit-Learn 1.0.2
-* [Python Optimal Transport (POT)](https://pythonot.github.io/)
+* [Python Optimal Transport (POT)](https://pythonot.github.io/) [2]
 
 ## Download code
 The code has been test on Python versions 3.6 and above on Linux.
@@ -26,7 +26,7 @@ cd CMOT/src
 We demonstrate CMOT on Pan-Cancer data [1] for gene expression inference from chromatin accessiblity.
 
 ### Download data
-Pan-cancer data can be downloaded [here](https://github.com/sayali7/CMOT/tree/main/src/data/Pan-Cancer)
+Pan-cancer data can be downloaded [here](https://github.com/sayali7/CMOT/tree/main/src/data/Pan-Cancer).
 
 Train CMOT:
 ```r
@@ -66,3 +66,5 @@ The above evaluations give cell-wise Pearson correlations for the inferred modal
 ## References
 <a id="1">[1]</a> 
 L. Liu et al., “Deconvolution of single-cell multi-omics layers reveals regulatory heterogeneity,” Nat Commun, vol. 10, no. 1, p. 470, Dec. 2019, doi: 10.1038/s41467-018-08205-7.
+<a id="1">[2]</a>
+Rémi Flamary, Nicolas Courty, Alexandre Gramfort, Mokhtar Z. Alaya, Aurélie Boisbunon, Stanislas Chambon, Laetitia Chapel, Adrien Corenflos, Kilian Fatras, Nemo Fournier, Léo Gautheron, Nathalie T.H. Gayraud, Hicham Janati, Alain Rakotomamonjy, Ievgen Redko, Antoine Rolet, Antony Schutz, Vivien Seguy, Danica J. Sutherland, Romain Tavenard, Alexander Tong, Titouan Vayer, “POT Python Optimal Transport library,” JMLR, [Online]. Available: Website: https://pythonot.github.io/
