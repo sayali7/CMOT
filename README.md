@@ -9,8 +9,16 @@ To address those challenges, we developed Cross-Modality Optimal Transport (CMOT
 
 ## System requirements
 * Python 3.6 or above
-* Pandas
-* Numpy
-* Scikit-Learn
+* Pandas 1.3.5
+* Numpy 1.21.4
+* Scikit-Learn 1.0.2
 * [Python Optimal Transport (POT)](https://pythonot.github.io/)
+
+## Download code
+The code has been test on Python versions 3.6 and above on Linux.
+```r
+git clone https://github.com/daifengwanglab/CMOT
+cd CMOT
+```
+
 
