@@ -25,15 +25,17 @@ cd CMOT/src
 ## Usage
 to train CMOT:
 ```r
-python3 run_cmot.py -sourceX modalityX.csv -sourceY modalityY.csv -targetYhat modalityYhat.csv -K 5 -d 10 -W W -reg_e 1e-01 reg_cl 1e00 topFeat 50 k 10
+python3 run_cmot.py -sourceX modalityX.csv -sourceY modalityY.csv -targetYhat modalityYhat.csv -K 5 -d 10 -W W hc -2 -reg_e 1e-01 reg_cl 1e00 topFeat 50 k 10
 ```
 The command line arguments are:
-* sourceX: .csv file of size (s<sub>X</sub>, f<sub>X</sub>) for training modality X
-* sourceY: .csv file of size (s<sub>Y</sub>, f<sub>Y</sub>) for training modality Y
-* targetYhat: .csv file of size (s<sub>$\widehat{Y}$</sub>, f<sub>$\widehat{Y}$</sub>) testing modality $\widehat{Y}$
+* sourceX: .csv file of size (s<sub>X</sub>, f<sub>X</sub>) for source modality X
+* sourceY: .csv file of size (s<sub>Y</sub>, f<sub>Y</sub>) for source modality Y
+* labels: .csv file of size (s<sub>Y</sub>, f<sub>Y</sub>) speicfying cell label information for cells in source modality Y
+* targetYhat: .csv file of size (s<sub>$\widehat{Y}$</sub>, f<sub>$\widehat{Y}$</sub>) target modality $\widehat{Y}$
 * K: integer specifying the nearest neighbors for Non-linear manidold alignment (NMA) (Step A)
 * d: integer specifying the latent dimension for NMA (Step A)
 * W: binary matrix of size (s<sub>X</sub>,s<sub>Y</sub>) specifying the correspondence between cells of X and Y (Step A)
+* hc: integer specifying hierarchical clusters 
 * reg_e: entropy regularization for optimal transport (Step B)
 * reg_cl: label regularization for optimal transport (Step B)
 * topFeat: integer specifying number of top variable features to use for K-nearest neighbors (Step C)
