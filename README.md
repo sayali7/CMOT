@@ -36,7 +36,7 @@ The command line arguments are:
 * W: binary matrix of size (s<sub>X</sub>,s<sub>Y</sub>) specifying the correspondence between cells of X and Y (Step A)
 * reg_e: entropy regularization for optimal transport (Step B)
 * reg_cl: label regularization for optimal transport (Step B)
-* topFeat: integer specifying number of top variable features to use for K-nearest neighbors in Step C (Step C)
+* topFeat: integer specifying number of top variable features to use for K-nearest neighbors (Step C)
 * k: integer specifying the K-nearest neighbors for cross-modality inference (Step C)
 
 s<sub>X</sub>: number of cells in X, f<sub>X</sub>: number of features in X, s<sub>Y</sub>: number of cells in Y, f<sub>Y</sub>: number of cells in Y, s<sub>$\widehat{Y}$</sub>: number of cells in widehat{Y}, f<sub>$\widehat{Y}$</sub>: number of features in $\widehat{Y}$
