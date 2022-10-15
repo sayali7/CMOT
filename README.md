@@ -8,5 +8,9 @@ To address those challenges, we developed Cross-Modality Optimal Transport (CMOT
 ![alt text](https://github.com/sayali7/CMOT/blob/main/src/Fig1.png)
 
 ## System requirements
+* Python 3.6 or above
+* Pandas
+* Numpy
+* Scikit-Learn
+* [Python Optimal Transport (POT)](https://pythonot.github.io/)
 
-The analysis is based on R version 4.0.3. For the gene regulatory network, a *Linux* system with 32 GB RAM and 32GB storage would be enough. For network analysis, a standard computer should be enough.
