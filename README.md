@@ -26,7 +26,7 @@ cd CMOT/src
 We demonstrate CMOT on Pan-Cancer data [[1]] for gene expression inference from chromatin accessiblity.
 
 ### Download data
-Pan-cancer data can be downloaded [here] ()
+Pan-cancer data can be downloaded [here] (https://github.com/sayali7/CMOT/tree/main/src/data/Pan-Cancer)
 
 Train CMOT:
 ```r
@@ -50,12 +50,14 @@ The command line arguments are:
 s<sub>X</sub>: number of cells in X, f<sub>X</sub>: number of features in X, s<sub>Y</sub>: number of cells in Y, f<sub>Y</sub>: number of cells in Y, s<sub>$\widehat{Y}$</sub>: number of cells in widehat{Y}, f<sub>$\widehat{Y}$</sub>: number of features in $\widehat{Y}$
  
 Output:
-The result is inferred modality $\widehat{X}$ of size (s<sub>$\widehat{X}$</sub>, f<sub>$\widehat{X}$</sub>); s<sub>$\widehat{X}$</sub>: number of cells in inferred modality $\widehat{X}$, f<sub>$\widehat{X}$</sub>: number of features in modality $\widehat{X}$, such that f<sub>X</sub> = f<sub>$\widehat{X}$</sub>
+The result is the normalized inferred modality $\widehat{X}$ of size (s<sub>$\widehat{X}$</sub>, f<sub>$\widehat{X}$</sub>); s<sub>$\widehat{X}$</sub>: number of cells in inferred modality $\widehat{X}$, f<sub>$\widehat{X}$</sub>: number of features in modality $\widehat{X}$, such that f<sub>X</sub> = f<sub>$\widehat{X}$</sub>.
 
-To evaluate:
+ Evaluate CMOT's inferred modality:
 ```r
 python3 cmot_evaluations.py --targetX_hat PanCancerX_hat.csv --predX_hat ./results/Norm_ModalityXhat.csv
 ```
+Output:
+The above evaluations give cell-wise Pearson correlations for the inferred modality $\widehat{X}$ versus test modality.
 ## References
 <a id="1">[1]</a> 
 L. Liu et al., “Deconvolution of single-cell multi-omics layers reveals regulatory heterogeneity,” Nat Commun, vol. 10, no. 1, p. 470, Dec. 2019, doi: 10.1038/s41467-018-08205-7.
