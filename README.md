@@ -5,7 +5,7 @@ Biological mechanisms are complex spanning multiple facets, each providing a uni
 To address those challenges, we developed Cross-Modality Optimal Transport (CMOT), a computational approach to infer missing modalities of single cells based on optimal transport (OT). CMOT first aligns a group of cells (source) within available multi-modal data onto a common latent space. Then, it applies optimal transport to map the cells with a single modality (target) to the aligned cells in source from the same modality by minimizing their cost of transportation using Wasserstein distance. This distance can be regularized by prior knowledge (e.g., cell types) or induced cells clusters to improve mapping, and an entropy of transport to speed up OT computations. Once transported, CMOT uses K-Nearest-Neighbors to infer the missing modality for the cells in target from another modality of mapped cells in source. Furthermore, the alignment of CMOT works for partially corresponding information from multi-modalities, i.e., allowing a fraction of unmatched cells in source. We evaluated CMOT on several emerging multi-modal datasets, e.g., gene and protein expression and chromatin accessibility in developing brain, cancers, and immunology. We found that not only does CMOT outperform existing state-of-art methods, but its inferred gene expression is biologically interpretable such as classifying cell types and cancer types. 
 
 ## Flow chart
-![alt text](https://github.com/cngupta/scNET/blob/master/workflow.png)
+![alt text](https://github.com/sayali7/CMOT/blob/main/src/Fig1.png)
 
 ## System requirements
 
