@@ -23,7 +23,7 @@ git clone https://github.com/daifengwanglab/CMOT
 cd CMOT/src
 ```
 ## Usage
-We demonstrate CMOT on Pan-Cancer data [[1]] for gene expression inference from chromatin accessiblity.
+We demonstrate CMOT on Pan-Cancer data [1] for gene expression inference from chromatin accessiblity.
 
 ### Download data
 Pan-cancer data can be downloaded [here] (https://github.com/sayali7/CMOT/tree/main/src/data/Pan-Cancer)
