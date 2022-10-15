@@ -25,21 +25,22 @@ cd CMOT/src
 ## Usage
 to train CMOT:
 ```r
-python3 run_cmot.py -sourceX modalityX.csv -sourceY modalityY.csv -targetYhat modalityYhat.csv -K 5 -d 10 -W W hc -2 -reg_e 1e-01 reg_cl 1e00 topFeat 50 k 10
+python3 run_cmot.py -sourceX modalityX.csv -sourceY modalityY.csv -labels labels.csv -targetY modalityYhat.csv -K 5 -d 10 -W W hc -2 -reg_e 1e-01 reg_cl 1e00 topFeat 50 k 10
 ```
 The command line arguments are:
 * sourceX: .csv file of size (s<sub>X</sub>, f<sub>X</sub>) for source modality X
 * sourceY: .csv file of size (s<sub>Y</sub>, f<sub>Y</sub>) for source modality Y
-* labels: .csv file of size (s<sub>Y</sub>, f<sub>Y</sub>) speicfying cell label information for cells in source modality Y
-* targetYhat: .csv file of size (s<sub>$\widehat{Y}$</sub>, f<sub>$\widehat{Y}$</sub>) target modality $\widehat{Y}$
+* labels: .csv file of size (s<sub>Y</sub>, f<sub>Y</sub>) specifying prior knowledge of cell labels in source modality Y
+* targetY: .csv file of size (s<sub>$\widehat{Y}$</sub>, f<sub>$\widehat{Y}$</sub>) target modality $\widehat{Y}$
 * K: integer specifying the nearest neighbors for Non-linear manidold alignment (NMA) (Step A)
 * d: integer specifying the latent dimension for NMA (Step A)
-* W: binary matrix of size (s<sub>X</sub>,s<sub>Y</sub>) specifying the correspondence between cells of X and Y (Step A)
-* hc: integer specifying hierarchical clusters 
+* W: binary numpy matrix (.npy) of size (s<sub>X</sub>,s<sub>Y</sub>) specifying the correspondence between cells of X and Y (Step A)
+* hc: integer specifying hierarchical clusters if no prior knowledge is available
 * reg_e: entropy regularization for optimal transport (Step B)
 * reg_cl: label regularization for optimal transport (Step B)
 * topFeat: integer specifying number of top variable features to use for K-nearest neighbors (Step C)
 * k: integer specifying the K-nearest neighbors for cross-modality inference (Step C)
+* outdir: output directory
 
 s<sub>X</sub>: number of cells in X, f<sub>X</sub>: number of features in X, s<sub>Y</sub>: number of cells in Y, f<sub>Y</sub>: number of cells in Y, s<sub>$\widehat{Y}$</sub>: number of cells in widehat{Y}, f<sub>$\widehat{Y}$</sub>: number of features in $\widehat{Y}$
  
