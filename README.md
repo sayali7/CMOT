@@ -26,7 +26,7 @@ cd CMOT/src
 We demonstrate CMOT on Pan-Cancer data [1] for gene expression inference from chromatin accessiblity.
 
 ### Download data
-Pan-cancer data can be downloaded [here] (https://github.com/sayali7/CMOT/tree/main/src/data/Pan-Cancer)
+Pan-cancer data can be downloaded [here](https://github.com/sayali7/CMOT/tree/main/src/data/Pan-Cancer)
 
 Train CMOT:
 ```r
