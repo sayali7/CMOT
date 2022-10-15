@@ -28,7 +28,7 @@ We demonstrate CMOT on Pan-Cancer data [1] for gene expression inference from ch
 ### Download data
 Pan-cancer data can be downloaded [here](https://github.com/sayali7/CMOT/tree/main/src/data/Pan-Cancer).
 
-Train CMOT:
+1. Train CMOT:
 ```r
 python3 run_cmot.py --sourceX ./src/data/Pan-Cancer/PanCancerX.csv --sourceY ./src/data/Pan-Cancer/PanCancerY.csv --targetY ./src/data/Pan-Cancer/PanCancerY_hat.csv --K 5 --d 10 --W ./src/data/Pan-Cancer/W.npy --hc 3 --reg_e 5e03 --reg_cl 1e00 --topFeat 150 --k 40
 ```
@@ -52,7 +52,7 @@ s<sub>X</sub>: number of cells in X, f<sub>X</sub>: number of features in X, s<s
 Output:
 The result is the normalized inferred modality $\widehat{X}$ of size (s<sub>$\widehat{X}$</sub>, f<sub>$\widehat{X}$</sub>); s<sub>$\widehat{X}$</sub>: number of cells in inferred modality $\widehat{X}$, f<sub>$\widehat{X}$</sub>: number of features in modality $\widehat{X}$, such that f<sub>X</sub> = f<sub>$\widehat{X}$</sub>.
 
- Evaluate CMOT's inferred modality:
+2. Evaluate CMOT's inferred modality:
 ```r
 python3 cmot_evaluations.py --targetX_hat ./src/data/Pan-Cancer/PanCancerX_hat.csv --predX_hat .src/results/Norm_ModalityXhat.csv
 ```
