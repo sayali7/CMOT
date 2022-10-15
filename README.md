@@ -56,8 +56,13 @@ The result is the normalized inferred modality $\widehat{X}$ of size (s<sub>$\wi
 ```r
 python3 cmot_evaluations.py --targetX_hat PanCancerX_hat.csv --predX_hat ./results/Norm_ModalityXhat.csv
 ```
+* targetX_hat: .csv file of size (s<sub>$\widehat{X}$</sub>, f<sub>$\widehat{X}$</sub>) held-out target modality $\widehat{X}$
+* predX_hat: .csv file of inferred target modality $\widehat{X}$ by CMOT
+
 Output:
-The above evaluations give cell-wise Pearson correlations for the inferred modality $\widehat{X}$ versus test modality.
+The above evaluations give cell-wise Pearson correlations for the inferred modality $\widehat{X}$ versus held out target modality $\widehat{X}$
+
+
 ## References
 <a id="1">[1]</a> 
 L. Liu et al., “Deconvolution of single-cell multi-omics layers reveals regulatory heterogeneity,” Nat Commun, vol. 10, no. 1, p. 470, Dec. 2019, doi: 10.1038/s41467-018-08205-7.
