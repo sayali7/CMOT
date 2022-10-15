@@ -23,7 +23,7 @@ cd CMOT
 ## Usage
 to train CMOT:
 ```r
-python3 run_cmot.py -sourceX modalityX.csv -sourceY modalityY.csv -targetYhat modalityYhat.csv -K 5 -d 10 -percent_align paMat -reg_e 1e-01 reg_cl 1e00 topFeat 50 k 10
+python3 run_cmot.py -sourceX modalityX.csv -sourceY modalityY.csv -targetYhat modalityYhat.csv -K 5 -d 10 -W W -reg_e 1e-01 reg_cl 1e00 topFeat 50 k 10
 ```
 The command line arguments are:
 * sourceX: .csv file of size (s<sub>X</sub>, nfeatures) for training modality X 
@@ -31,7 +31,7 @@ The command line arguments are:
 * targetYhat: .csv file of size (s<sub>$\widehat{Y}$</sub>, nfeatures) testing modality $\widehat{Y}$
 * K: integer to specify the nearest neighbors for Non-linear manidold alignment (NMA)
 * d: integer to specify the latent dimension for NMA
-* percent_align: binary array of size (s<sub>X</sub>,s<sub>Y</sub>) specifying the correspondence between cells of X and Y
+* W: binary matrix of size (s<sub>X</sub>,s<sub>Y</sub>) specifying the correspondence between cells of X and Y
 * reg_e: entropy regularization for optimal transport
 * reg_cl: label regularization for optimal transport
 * topFeat: integer to specify number of top variable features to use for K-nearest neighbors in Step C
