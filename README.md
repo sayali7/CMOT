@@ -20,7 +20,7 @@ To address those challenges, we developed Cross-Modality Optimal Transport (CMOT
 The code has been test on Python versions 3.6 and above on Linux.
 ```r
 git clone https://github.com/daifengwanglab/CMOT
-cd CMOT
+cd CMOT/src
 ```
 ## Usage
 to train CMOT:
