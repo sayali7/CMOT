@@ -30,8 +30,8 @@ The command line arguments are:
 * sourceY: .csv file of size (s<sub>Y</sub>, nfeatures) for training modality Y
 * targetYhat: .csv file of size (s<sub>$\widehat{Y}$</sub>, nfeatures) testing modality $\widehat{Y}$
 * K: integer to specify the nearest neighbors for Non-linear manidold alignment (NMA)
-* d: intert to specify the latent dimension for NMA
-* percent_align: binary array of size (ncells,) specifying the correspondence between cells of X and Y
+* d: integer to specify the latent dimension for NMA
+* percent_align: binary array of size (s<sub>X</sub>,s<sub>Y</sub>) specifying the correspondence between cells of X and Y
 * reg_e: entropy regularization for optimal transport
 * reg_cl: label regularization for optimal transport
 * topFeat: integer to specify number of top variable features to use for K-nearest neighbors in Step C
