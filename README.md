@@ -23,9 +23,14 @@ git clone https://github.com/daifengwanglab/CMOT
 cd CMOT/src
 ```
 ## Usage
-to train CMOT:
+We demonstrate CMOT on Pan-Cancer data [[1]] for gene expression inference from chromatin accessiblity.
+
+### Download data
+Pan-cancer data can be downloaded [here] ()
+
+Train CMOT:
 ```r
-python3 run_cmot.py --sourceX PanCancerX.csv --sourceY PanCancerY.csv --targetY PanCancerY_hat.csv --K 5 --d 30 --W W.npy --hc 3 --reg_e 1e03 --reg_cl 1e00 --topFeat 150 --k 40
+python3 run_cmot.py --sourceX PanCancerX.csv --sourceY PanCancerY.csv --targetY PanCancerY_hat.csv --K 5 --d 10 --W W.npy --hc 3 --reg_e 5e03 --reg_cl 1e00 --topFeat 150 --k 40
 ```
 The command line arguments are:
 * sourceX: .csv file of size (s<sub>X</sub>, f<sub>X</sub>) for source modality X
@@ -51,3 +56,6 @@ To evaluate:
 ```r
 python3 cmot_evaluations.py --targetX_hat PanCancerX_hat.csv --predX_hat ./results/Norm_ModalityXhat.csv
 ```
+## References
+<a id="1">[1]</a> 
+L. Liu et al., “Deconvolution of single-cell multi-omics layers reveals regulatory heterogeneity,” Nat Commun, vol. 10, no. 1, p. 470, Dec. 2019, doi: 10.1038/s41467-018-08205-7.
