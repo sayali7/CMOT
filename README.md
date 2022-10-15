@@ -66,5 +66,6 @@ The above evaluations give cell-wise Pearson correlations for the inferred modal
 ## References
 <a id="1">[1]</a> 
 L. Liu et al., “Deconvolution of single-cell multi-omics layers reveals regulatory heterogeneity,” Nat Commun, vol. 10, no. 1, p. 470, Dec. 2019, doi: 10.1038/s41467-018-08205-7.
+
 <a id="1">[2]</a>
 Rémi Flamary, Nicolas Courty, Alexandre Gramfort, Mokhtar Z. Alaya, Aurélie Boisbunon, Stanislas Chambon, Laetitia Chapel, Adrien Corenflos, Kilian Fatras, Nemo Fournier, Léo Gautheron, Nathalie T.H. Gayraud, Hicham Janati, Alain Rakotomamonjy, Ievgen Redko, Antoine Rolet, Antony Schutz, Vivien Seguy, Danica J. Sutherland, Romain Tavenard, Alexander Tong, Titouan Vayer, “POT Python Optimal Transport library,” JMLR, [Online]. Available: Website: https://pythonot.github.io/
