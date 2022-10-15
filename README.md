@@ -30,7 +30,7 @@ python3 run_cmot.py -sourceX modalityX.csv -sourceY modalityY.csv -targetYhat mo
 The command line arguments are:
 * sourceX: .csv file of size (s<sub>X</sub>, f<sub>X</sub>) for training modality X;  s<sub>X</sub>: number of cells in X, f<sub>X</sub>: number of features in X
 * sourceY: .csv file of size (s<sub>Y</sub>, f<sub>Y</sub>) for training modality Y; s<sub>Y</sub>: number of cells in Y, f<sub>Y</sub>: number of cells in Y
-* targetYhat: .csv file of size (s<sub>$\widehat{Y}$</sub>, f<sub>$\widehat{Y}$</sub>) testing modality $\widehat{Y}$; s<sub>$\widehat{Y}$</sub>: number of cells in widehat{Y}, f<sub>$\widehat{Y}$</sub>: number of features in $$\widehat{Y}$
+* targetYhat: .csv file of size (s<sub>$\widehat{Y}$</sub>, f<sub>$\widehat{Y}$</sub>) testing modality $\widehat{Y}$; s<sub>$\widehat{Y}$</sub>: number of cells in widehat{Y}, f<sub>$\widehat{Y}$</sub>: number of features in $\widehat{Y}$
 * K: integer to specify the nearest neighbors for Non-linear manidold alignment (NMA)
 * d: integer to specify the latent dimension for NMA
 * W: binary matrix of size (s<sub>X</sub>,s<sub>Y</sub>) specifying the correspondence between cells of X and Y
