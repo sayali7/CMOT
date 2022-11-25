@@ -7,7 +7,7 @@ To address those challenges, we developed Cross-Modality Optimal Transport (CMOT
 </p>
 
 ## Flow chart
-![alt text](https://github.com/sayali7/CMOT/blob/main/src/Figure1.pdf)
+![alt text](https://github.com/sayali7/CMOT/blob/main/src/Figure1.png)
 
 ## System requirements
 * Python 3.6 or above
