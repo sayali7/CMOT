@@ -1,5 +1,7 @@
 # CMOT: Cross Modality Optimal Transport for multimodal inference
 
+[![DOI](https://zenodo.org/badge/551975347.svg)](https://zenodo.org/badge/latestdoi/551975347)
+
 ## Abstract
 <p align="justify">
 Biological mechanisms are complex spanning multiple facets, each providing a unique view of the underlying mechanism. Recent single-cell technologies such as scRNA-seq and scATAC-seq have facilitated parallel probing into each of these facets, providing multimodal measurements of individual cells. An integrative analysis of these single-cell modalities can therefore provide a comprehensive understanding of specific cellular and molecular mechanisms. Despite the technological advances, simultaneous profiling of multiple modalities of single cells continues to be challenging as opposed to single modality measurements, and therefore, it may not always be feasible to conduct such profiling experiments (e.g., missing modalities). Furthermore, even with the available multimodalities, data integration remains elusive since modalities may not always have paired samples, leaving partial to no correspondence information. 
@@ -22,7 +24,6 @@ The code has been test on Python versions 3.6 and above on Linux.
 git clone https://github.com/daifengwanglab/CMOT
 cd CMOT/src
 ```
-[![DOI](https://zenodo.org/badge/551975347.svg)](https://zenodo.org/badge/latestdoi/551975347)
 
 ## Usage
 We demonstrate CMOT on Pan-Cancer data [2] for gene expression inference from chromatin accessiblity.
