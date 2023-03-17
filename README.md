@@ -22,6 +22,8 @@ The code has been test on Python versions 3.6 and above on Linux.
 git clone https://github.com/daifengwanglab/CMOT
 cd CMOT/src
 ```
+[![DOI](https://zenodo.org/badge/551975347.svg)](https://zenodo.org/badge/latestdoi/551975347)
+
 ## Usage
 We demonstrate CMOT on Pan-Cancer data [2] for gene expression inference from chromatin accessiblity.
 
