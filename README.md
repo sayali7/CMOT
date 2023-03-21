@@ -49,6 +49,7 @@ The command line arguments are:
 * topFeat: integer specifying number of top variable features to use for K-nearest neighbors (Step C)
 * k: integer specifying the K-nearest neighbors for cross-modality inference (Step C)
 * outdir: output directory
+* param_search: enable for optimal parameter seach (default=False) 
 
 s<sub>X</sub>: number of cells in X, f<sub>X</sub>: number of features in X, s<sub>Y</sub>: number of cells in Y, f<sub>Y</sub>: number of cells in Y, s<sub>$\widehat{Y}$</sub>: number of cells in widehat{Y}, f<sub>$\widehat{Y}$</sub>: number of features in $\widehat{Y}$
  
