@@ -51,6 +51,8 @@ The command line arguments are:
 * outdir: output directory
 * param_search: enable for optimal parameter seach (default=False) 
 
+Parameter search (Optional): To perform parameter search for: reg_e, topFeat, and k, enable param_search=True.
+
 s<sub>X</sub>: number of cells in X, f<sub>X</sub>: number of features in X, s<sub>Y</sub>: number of cells in Y, f<sub>Y</sub>: number of cells in Y, s<sub>$\widehat{Y}$</sub>: number of cells in widehat{Y}, f<sub>$\widehat{Y}$</sub>: number of features in $\widehat{Y}$
  
 Output:
