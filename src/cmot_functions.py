@@ -57,7 +57,8 @@ def check_mapping_quality(ot_lpl1, transp_Xs_lpl1):
             output.write(str(row) + '\n')
   
     poor_mapped_cell_percent = (len(np.argwhere(preds==-1).reshape(-1))/len(snpXTest))*100
-    print ("Warning: Found {} poorly mapped cells from the target modaity. Users can remove these cells to avoid incorrect imputation. Their cell ids are stored in poorly_mapped_cells.txt".format(poor_mapped_cell_percent))
+    print ("Warning: Found {} poorly mapped cells from the target modaity. Users can remove these cells to \
+    avoid incorrect imputation. Their cell ids are stored in poorly_mapped_cells.txt".format(poor_mapped_cell_percent))
 
 def optimal_transport(Xs,Xt,reg_e, reg_cl,ys=None,method="lpl1_reg"):
    
