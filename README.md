@@ -70,8 +70,7 @@ s<sub>$\widehat{X}$</sub>: number of cells in $\widehat{X}$, f<sub>$\widehat{X}$
 Output:
 The above evaluations give cell-wise Pearson correlations for the inferred modality $\widehat{X}$ versus held out target modality $\widehat{X}$
 
-If you find this useful or use it for your work, please cite us: 
-
+* If you find this useful or use it for your work, please cite us:\\
 Alatkar, S.A., Wang, D. CMOT: Cross-Modality Optimal Transport for multimodal inference. Genome Biol 24, 163 (2023). https://doi.org/10.1186/s13059-023-02989-8
 
 ## References
